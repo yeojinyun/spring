@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01test386page.html</title>
+    <style>*{font-size: 17pt;}</style>
+    <script>
+      var str= 'ABCDEFG';
+      document.write(str.toLowerCase(),'<br>');//소문자
+      var str='abcdefg';
+      document.write(str.toUpperCase(),'<br>'); //대문자 
+
+      var str='yeojinzzang';
+      document.write(str.charAt(2),'<br>'); // 2번째 자리의 문자 추출
+
+      var str= 'yeojinzzang';
+      document.write(str.indexOf('g'),'<br>'); //문자의 자릿수(index번호)추출
+
+      var str= 'yeojinzzang';
+      document.write(str.lastIndexOf('z'),'<br>'); //마지막 z의 index번호 추출?
+
+      var str= 'yeojinzzang';
+      document.write(str.includes('zzang'),'<br>'); //includes()괄호 안의 문자가 str에 포함되었다면 true 아니라면 false
+
+      var str= 'yeojinzzang';
+      document.write(str.substring(0,6),'<br>');//(0.6)>>0부터 6이전까지의 str 추출 즉, 0번~5번만 나옴, (4) 4번부터 이후의 모든 문자 추출
+      
+      var str= 'yeojinzzang';
+      document.write(str.substr(6,5),'<br>'); //(6,5)>>index 6번부터 5개의 문자를 추출
+
+      var str= 'yeojinzzang';
+      document.write(str.split(),'<br>');
+
+      
+      var str= 'yeojinzzang';
+      document.write(str.replace('yeojin','latte'),'<br>');// yeojin을 latte로 replace
+
+      var str1= 'yeojin';
+      var str2= 'yun';
+      document.write(str1.concat(str2), '<br>'); //str1 concat(str2) str1, str2 연결
+
+      var str= ' yeojinzzang ';
+      document.write('smart'+str,'<br>') //공백 존재
+      document.write('smart'+str.trim(),'<br>'); //앞뒤 공백 제거
+      
+
+     var str='서울구로구서울하이미디어서울화이팅';
+     document.write(str.replaceAll('서울','seoul'),'<br>'); 
+
+     var jumin="890729-2065913";
+     var gender=jumin.charAt(7);
+     if(gender=='1' || gender=='3'){document.write('male <br>')}
+     else if(gender=='4' || gender=='2'){document.write('female <br>')}
+     else(document.write('성별 기입이 틀렸습니다'));
+
+
+     var jumin="890729-2065913";
+     var month=jumin.substr(2,2);
+     var day=jumin.substr(4,2);
+     document.write('당신의 생일은\n', month, '월\n', day, '일입니다.', '<br>');
+
+     
+    </script>
+</head>
+<body>
+    
+      
+
+
+
+
+</body>
+</html>
